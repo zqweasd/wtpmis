@@ -1,0 +1,11 @@
+<style>
+	.inactive-label {
+		display: inline-block; 
+		width: 80px; 
+		vertical-align: top; 
+		text-align: center;
+	}
+	.inactive-button {
+		display: inline-block; 
+	}
+</style>

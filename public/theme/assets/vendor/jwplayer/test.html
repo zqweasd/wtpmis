@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script src="jwplayer.html5.js"></script>
+<script src="jwplayer.js"></script>
+</head>
+<body>
+
+<div id="container">&nbsp;</div>
+
+<script>
+jwplayer("container").setup({
+flashplayer: "jwplayer.flash.swf",
+  playlist: [{
+    image: "/customer/portal/attachments/238187",
+    sources: [{
+      file: "https://video.worldcdn.net/541833257/mp4:caster247TzMQDerlYskX.smil"
+    },{
+      file: "http://content.bitsontherun.com/videos/nhYDGoyh-kNspJqnJ.mp4"
+    }]
+  }],
+  primary: "flash",
+    height: 360,
+    width: 640
+});
+</script>
+
+</body>
+</html>
