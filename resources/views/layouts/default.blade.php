@@ -365,6 +365,33 @@
 		<script src="/theme/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 		<script src="/theme/assets/vendor/magnific-popup/magnific-popup.js"></script>
 		<script src="/theme/assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+		<!-- ASSETS -->
+		<script src="/theme/assets/vendor/jquery/jquery.js"></script>
+		<script src="/theme/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="/theme/assets/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="/theme/assets/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="/theme/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="/theme/assets/vendor/magnific-popup/magnific-popup.js"></script>
+		<script src="/theme/assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+		
+		<!-- Specific Page Vendor -->
+		<script src="/theme/assets/vendor/jquery-validation/jquery.validate.js"></script>
+		<script src="/theme/assets/vendor/bootstrap-wizard/jquery.bootstrap.wizard.js"></script>
+		<script src="/theme/assets/vendor/pnotify/pnotify.custom.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="/theme/assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="/theme/assets/javascripts/theme.custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="/theme/assets/javascripts/theme.init.js"></script>
+
+
+		<!-- Examples -->
+		<script src="/theme/assets/javascripts/forms/examples.wizard.js"></script>
 		
 		<!-- CHARTS -->
 		<script src="/theme/assets/vendor/jquery-appear/jquery.appear.js"></script>
