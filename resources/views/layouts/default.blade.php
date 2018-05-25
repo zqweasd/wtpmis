@@ -22,6 +22,11 @@
 		<link rel="stylesheet" href="/theme/assets/vendor/font-awesome/css/font-awesome.css" />
 		<link rel="stylesheet" href="/theme/assets/vendor/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="/theme/assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+
+		<link rel="stylesheet" type="text/css" href="/theme/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf"/>
+		<link rel="stylesheet" type="text/css" href="/theme/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf"/>
+		<link rel="stylesheet" type="text/css" href="/theme/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff"/>
+		<link rel="stylesheet" type="text/css" href="/theme/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf"/>
 		
 		<link rel="stylesheet" href="/theme/assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
 		

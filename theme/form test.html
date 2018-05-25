@@ -1,0 +1,332 @@
+<!doctype html>
+<html class="fixed">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="UTF-8">
+
+		<title>Form Wizard | Porto Admin - Responsive HTML5 Template 1.4.1</title>
+		<meta name="keywords" content="HTML5 Admin Template" />
+		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+
+		<!-- Specific Page Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/pnotify/pnotify.custom.css" />
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+
+		<!-- Head Libs -->
+		<script src="assets/vendor/modernizr/modernizr.js"></script>
+	</head>
+	<body>
+		<div class="row">
+							<div class="col-xs-12">
+								<section class="panel form-wizard" id="w4">
+									<header class="panel-heading">
+										<div class="panel-actions">
+											<a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+											<a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+										</div>
+									</header>
+									<div class="panel-body">
+										<div class="wizard-progress wizard-progress-lg">
+											<div class="steps-progress">
+												<div class="progress-indicator"></div>
+											</div>
+											<ul class="wizard-steps">
+												<li class="active">
+													<a href="#w4-account" data-toggle="tab"><span>1</span>Personal Info</a>
+												</li>
+												<li>
+													<a href="#w4-profile" data-toggle="tab"><span>2</span>Family Info</a>
+												</li>
+												<li>
+													<a href="#w4-billing" data-toggle="tab"><span>3</span>Vendor Helper Info</a>
+												</li>
+												<li>
+													<a href="#w4-confirm" data-toggle="tab"><span>4</span>Confirmation</a>
+												</li>
+											</ul>
+										</div>
+						
+										<form class="form-horizontal" novalidate="novalidate">
+											<div class="tab-content">
+												<div id="w4-account" class="tab-pane active">
+													<div class="form-group">
+														<label class="col-md-1 control-label"><b>Market</b></label>
+														<div class="col-md-3">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="market" id="purpose" class="form-control">
+															</div>
+														</div>
+														<label class="col-md-1 control-label"><b>Section</b></label>
+														<div class="col-md-3">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="section" id="purpose" class="form-control">
+															</div>
+														</div>
+														<label class="col-md-1 control-label"><b>Stall No.</b></label>
+														<div class="col-md-3">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="stallno" id="purpose" class="form-control">
+															</div>
+														</div>
+													</div>
+													
+													<hr/>
+													
+													<div class="form-group">
+
+														<label class="col-md-2 control-label"><b>Name:</b></label>
+														<div class="col-md-2">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name">
+															</div>
+														</div>
+														<div class="col-md-2">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="middlename" id="middlename" class="form-control" placeholder="Middle Name">
+															</div>
+														</div>
+														<div class="col-md-2">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name">
+															</div>
+														</div>
+														<div class="col-md-2">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="nameextension" id="namextension" class="form-control" placeholder="Name Extension">
+															</div>
+														</div>
+													</div>
+													<hr>
+													<div class="form-group">
+														<label class="col-md-2 control-label"><b>Birthday:</b></label>
+															<div class="col-md-3">
+																	<div id="bday-datepicker" class="input-group">
+																		<span class="input-group-addon">
+																			<i class="fa fa-calendar"></i>
+																		</span>
+																	<input type="text" data-plugin-datepicker class="form-control datepicker"  id="birthday" name="vendorbirthday" placeholder="MM/DD/YY">
+																	</div>
+															</div>
+															<label class="col-md-2 control-label"><b>Place of Birth:</b></label>	
+															<div class="col-md-3">
+																<div class="input-group mb-md input-group-icon">
+																	<input type="text" class="form-control" id="placeofbirth" name="placeofbirth" placeholder="Place of Birth">
+																</div>
+
+															</div>
+
+													</div>
+													<div class="form-group">
+														<label class="col-md-2 control-label"><b>Permanent Address:<br><sub>(Permanente nga Gipuy-an)<sub></b></label>
+														<div class="col-md-8">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="permanentaddress" id="street" class="form-control" placeholder="Permanent Address">
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-md-2 control-label"><b>City Address:<br><sub>(Lugar asa Gapuyo sa Syudad)</sub></b></label>
+														<div class="col-md-8">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="cityaddress" id="street" class="form-control" placeholder="City Address">
+															</div>
+														</div>
+													</div>
+													
+													<hr/>
+													
+													<div class="form-group zbot" >
+														<label class="col-md-2 control-label"><b>Sex: </b></label>
+														<div class="col-md-3">
+															<div class="input-group mb-md input-group-icon">
+																<select name="sex" id="sex" class="form-control">
+																	<option value="male">Male</option>
+																	<option value="female">Female</option>
+																</select>
+															</div>
+														</div>
+														<label class="col-md-2 control-label"><b>Contact Number(s): </b></label>
+														<div class="col-md-3">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="telephone" id="telephone" class="form-control" placeholder="Telephone">
+															</div>
+														</div>
+													</div>
+													<div class="form-group zbot" >
+														<label class="col-md-2 control-label"><b>Civil Status: </b></label>
+														<div class="col-md-3">
+															<div class="input-group mb-md input-group-icon">
+																<select name="status" id="status" class="form-control">
+																	<option value="single">Single</option>
+																	<option value="married">Married(Minyo)</option>
+																	<option value="widow">Widowed(Balo)</option>
+																	<option value="separated">Separated</option>
+																	<option value="separated">Annulled</option>
+																	<option value="separated">Separated</option>
+																</select>
+															</div>
+														</div>
+														<label class="col-md-2 control-label"><b>&nbsp;</b></label>
+														<div class="col-md-3">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="cellular" id="cellular" class="form-control" placeholder="Cellular">
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-md-2 control-label"><b>Citizenship: </b></label>
+														<div class="col-md-3">
+															<div class="input-group mb-md input-group-icon">
+																<input type="text" name="citizenship" id="citizenship" class="form-control" placeholder="Citizenship">
+															</div>
+														</div>
+														<label class="col-md-2 control-label"><b>&nbsp;</b></label>
+														<div class="col-md-3">
+															<div class="input-group mb-md input-group-icon">
+																<input type="email" name="others" id="others" class="form-control" placeholder="Others">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div id="w4-profile" class="tab-pane">
+													<div class="form-group">
+														<label class="col-sm-3 control-label" for="w4-first-name">First Name</label>
+														<div class="col-sm-9">
+															<input type="text" class="form-control" name="first-name" id="w4-first-name" required>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-sm-3 control-label" for="w4-last-name">Last Name</label>
+														<div class="col-sm-9">
+															<input type="text" class="form-control" name="last-name" id="w4-last-name" required>
+														</div>
+													</div>
+												</div>
+												<div id="w4-billing" class="tab-pane">
+													<div class="form-group">
+														<label class="col-sm-3 control-label" for="w4-cc">Card Number</label>
+														<div class="col-sm-9">
+															<input type="text" class="form-control" name="cc-number" id="w4-cc" required>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-sm-3 control-label" for="inputSuccess">Expiration</label>
+														<div class="col-sm-5">
+															<select class="form-control" name="exp-month" required>
+																<option>January</option>
+																<option>February</option>
+																<option>March</option>
+																<option>April</option>
+																<option>May</option>
+																<option>June</option>
+																<option>July</option>
+																<option>August</option>
+																<option>September</option>
+																<option>October</option>
+																<option>November</option>
+																<option>December</option>
+															</select>
+														</div>
+														<div class="col-sm-4">
+															<select class="form-control" name="exp-year" required>
+																<option>2014</option>
+																<option>2015</option>
+																<option>2016</option>
+																<option>2017</option>
+																<option>2018</option>
+																<option>2019</option>
+																<option>2020</option>
+																<option>2021</option>
+																<option>2022</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div id="w4-confirm" class="tab-pane">
+													<div class="form-group">
+														<label class="col-sm-3 control-label" for="w4-email">Email</label>
+														<div class="col-sm-9">
+															<input type="text" class="form-control" name="email" id="w4-email" required>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-3"></div>
+														<div class="col-sm-9">
+															<div class="checkbox-custom">
+																<input type="checkbox" name="terms" id="w4-terms" required>
+																<label for="w4-terms">I agree to the terms of service</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="panel-footer">
+										<ul class="pager">
+											<li class="previous disabled">
+												<a><i class="fa fa-angle-left"></i> Previous</a>
+											</li>
+											<li class="finish hidden pull-right">
+												<a>Finish</a>
+											</li>
+											<li class="next">
+												<a>Next <i class="fa fa-angle-right"></i></a>
+											</li>
+										</ul>
+									</div>
+								</section>
+							</div>
+						</div>	
+
+		<!-- Vendor -->
+		<script src="assets/vendor/jquery/jquery.js"></script>
+		<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+		<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+		
+		<!-- Specific Page Vendor -->
+		<script src="assets/vendor/jquery-validation/jquery.validate.js"></script>
+		<script src="assets/vendor/bootstrap-wizard/jquery.bootstrap.wizard.js"></script>
+		<script src="assets/vendor/pnotify/pnotify.custom.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="assets/javascripts/theme.custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="assets/javascripts/theme.init.js"></script>
+
+
+		<!-- Examples -->
+		<script src="assets/javascripts/forms/examples.wizard.js"></script>
+	</body>
+</html>

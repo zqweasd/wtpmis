@@ -397,14 +397,12 @@
 												<a><i class="fa fa-angle-left"></i> Previous</a>
 											</li>
 											<li class="finish hidden pull-right">
-												<a href="">Finish</a>
+												<a href="" id="add-vendor-btn4" class="hidden" style="color: yellow">Finish</a>
 											</li>
 											<li class="next">
 												<a  id="add-vendor-btn1" class="hide-btn-1 " data-button_id="btn-1" style="color: red">Next <i class="fa fa-angle-right"></i></a>
 												<a id="add-vendor-btn2" class="hide-btn-2 hidden" data-button_id="btn-2" style="color: green">Next <i class="fa fa-angle-right"></i></a>
 												<a id="add-vendor-btn3" class="hide-btn-3 hidden" data-button_id="btn-3" style="color: blue">Next <i class="fa fa-angle-right"></i></a>
-												<a id="add-vendor-btn4" class="hide-btn-4 hidden" data-button_id="btn-4" style="color: yellow">Next <i class="fa fa-angle-right"></i></a>
-
 											</li>
 										</ul>
 									</div>
@@ -496,11 +494,37 @@
 		var toggle_id       = BUTTON.data('toggle_id');
 		var data			= 0;
 
-		if(button_id == 'btn-1'){
-			console.log('1');
+		if(toggle_id == 'toggle-profile'){		
+			$('#add-vendor-btn1').removeClass('hidden');
+			$('#add-vendor-btn2').addClass('hidden');
+			$('#add-vendor-btn3').addClass('hidden');	
+			$('#add-vendor-btn4').addClass('hidden');		
+		}
+		if(toggle_id == 'toggle-family'){			
 			$('#add-vendor-btn1').addClass('hidden');
 			$('#add-vendor-btn2').removeClass('hidden');
 			$('#add-vendor-btn3').addClass('hidden');
+			$('#add-vendor-btn4').addClass('hidden');
+		}
+		if(toggle_id == 'toggle-helper'){			
+			$('#add-vendor-btn1').addClass('hidden');
+			$('#add-vendor-btn2').addClass('hidden');
+			$('#add-vendor-btn3').removeClass('hidden');
+			$('#add-vendor-btn4').addClass('hidden');
+		}
+		
+		if(toggle_id == 'toggle-confirm'){			
+			$('#add-vendor-btn1').addClass('hidden');
+			$('#add-vendor-btn2').addClass('hidden');
+			$('#add-vendor-btn3').addClass('hidden');
+			$('#add-vendor-btn4').removeClass('hidden');
+		}
+
+		if(button_id == 'btn-1'){
+			alert('Personal Info');
+			$('#add-vendor-btn1').addClass('hidden');
+			$('#add-vendor-btn2').removeClass('hidden');
+			$('#add-vendor-btn3').addClass('hidden');	
 			$('#add-vendor-btn4').addClass('hidden');
 			var vendor_inputs = $('#add-vendor-profile-form').serializeArray();
 
@@ -514,11 +538,11 @@
 				}
 			});
 		}
-		if(button_id == 'btn-2'){		
-			console.log('12');
+		if(button_id == 'btn-2'){	
+			alert('Family Info');
 			$('#add-vendor-btn1').addClass('hidden');
-			$('#add-vendor-btn2').removeClass('hidden');
-			$('#add-vendor-btn3').addClass('hidden');
+			$('#add-vendor-btn2').addClass('hidden');
+			$('#add-vendor-btn3').removeClass('hidden');
 			$('#add-vendor-btn4').addClass('hidden');
 			var vendor_inputs = $('#add-vendor-profile-form').serializeArray();
 
@@ -539,31 +563,7 @@
 			});
 		}
 		if(button_id == 'btn-3'){			
-			console.log('123');
-			$('#add-vendor-btn1').addClass('hidden');
-			$('#add-vendor-btn2').addClass('hidden');
-			$('#add-vendor-btn3').removeClass('hidden');
-			$('#add-vendor-btn4').addClass('hidden');
-			var vendor_inputs = $('#add-vendor-profile-form').serializeArray();
-
-			$.ajax({
-
-				url: '/save-vendor-helper',
-				data: vendor_inputs,
-				type: 'post',
-				success: function(response){
-					if(response.status =='failed'){
-						alert(response.message);
-						return;
-					}
-					else{
-						$('#save-prompt').removeClass('hidden');
-					}
-				}
-			});
-		}
-		if(button_id == 'btn-4'){
-			console.log('1234');
+			alert('Helper Info');
 			$('#add-vendor-btn1').addClass('hidden');
 			$('#add-vendor-btn2').addClass('hidden');
 			$('#add-vendor-btn3').addClass('hidden');
@@ -586,8 +586,14 @@
 				}
 			});
 		}
+		if(button_id == 'btn-4'){
 
-				
+			$('#add-vendor-btn1').addClass('hidden');
+			$('#add-vendor-btn2').addClass('hidden');
+			$('#add-vendor-btn3').addClass('hidden');
+			$('#add-vendor-btn4').removeClass('hidden'); 	
+        }
+		
 	});
 
 	$(document).on('click','#add-btn',function(){
